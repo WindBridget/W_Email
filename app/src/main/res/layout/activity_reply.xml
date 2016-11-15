@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_reply"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ru.w_email.Reply"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="REPLY MAIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/send_mail_title"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@android:color/holo_green_dark"
+        android:textColor="@android:color/background_light"
+        android:gravity="center" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="FROM: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_rep_from"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:hint="From"
+                android:id="@+id/rep_from"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="16"
+                android:layout_marginLeft="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="TO: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_rep_to"
+                android:textStyle="bold" />
+            <TextView
+
+                android:hint="To"
+                android:id="@+id/rep_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+
+                android:hint="Subject"
+                android:id="@+id/rep_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:inputType="textEmailSubject" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+
+                android:hint="Message text"
+                android:id="@+id/rep_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:layout_span="2"
+                android:textSize="14sp" />
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Reply"
+        android:layout_margin="15dp"
+        android:textColor="@android:color/background_light"
+        android:background="@android:color/holo_orange_dark" />
+
+
+</LinearLayout>

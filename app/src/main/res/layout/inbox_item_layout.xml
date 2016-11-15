@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:text="Form"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ib_from"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:maxLength="50" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:text="date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ib_date"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textStyle="italic"
+                android:maxLength="50" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:text="Subject"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ib_subject"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:maxLength="50" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>
